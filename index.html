@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-style: italic;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .project {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .project:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project h2 {
+            margin-top: 0;
+        }
+        .project p {
+            color: #666;
+        }
+        body {
+        background-image : url('bg.home.avif'); 
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+    
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body, .container {
+    height: 100%;
+}
+
+
+.container {
+    display: flex;
+    height: 100%; 
+}
+
+
+.photo {
+    flex: 1; /
+     
+    background-size: cover; 
+    background-position: center; 
+}
+.project {
+    flex: 1; 
+    padding: 20px; 
+    text-align: right; 
+}
+
+
+.project h1, .project h2 {
+    font-style: italic; 
+}
+.container {
+        display: flex;
+        align-items: center; 
+    }
+    img {
+        width: 40%; 
+        margin-right: 20px; 
+    }
+    .project {
+        padding: 128px 16px;
+    }
+    .project h1 {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="me.home.jpg">
+    <div class="project">
+        <h1>Hi,<br>
+            Im Purvi Ananth<br>
+            CS student<br>
+            <br>
+            <br>
+            <a href ="about.html">About me</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">contact me</a>
+        </h1>
+    </div>
+</div>
+<p style="text-align: center;background-color: rgb(62, 175, 206);"> <centre><a href="https://mail.google.com/mail" target="_self" title="click to email">Email:purviananth@gmail.com</a></centre>   </p>
+
+
+</body>
+
+<script>
+    /
+    function openLink(platform) {
+        alert('You clicked on ' + platform + ' icon!');
+    }
+
+    
+    const educationLink = document.getElementById('educationLink');
+    educationLink.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        
+        
+        const dropdownContent = document.querySelector('.dropdown-content');
+        if (dropdownContent.style.display === 'block') {
+            dropdownContent.style.display = 'none';
+        } else {
+            dropdownContent.style.display = 'block';
+        }
+    });
+</script>
+
+<footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Purvi Ananth</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer>
+
+</html>
+
+   

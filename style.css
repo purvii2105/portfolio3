@@ -1,0 +1,8 @@
+
+    .progress-bar {
+        width: 0;
+        transition: width 1s ease-in-out;
+        background-color: #007bff; /* Example background color */
+        height: 20px; /* Example height */
+      }
+      
